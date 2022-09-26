@@ -6,10 +6,6 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // await Permission.camera.request();
-  // await Permission.microphone.request();
-  // await Permission.storage.request();
-
   if (Platform.isAndroid) {
     await AndroidInAppWebViewController.setWebContentsDebuggingEnabled(true);
 
